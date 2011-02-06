@@ -35,12 +35,7 @@ PRODUCT_PACKAGES += \
     AndroidTerm \
     FileManager \
     CMParts \
-    CMStats \
-    CMUpdateNotify \
     CMWallpapers \
-    DSPManager \
-    libcyanogen-dsp \
-    Pacman
 
 # Extra tools in CyanogenMod
 PRODUCT_PACKAGES += \
@@ -82,15 +77,15 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
-PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+#PRODUCT_COPY_FILES +=  \
+#    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
 
 # Enable SIP+VoIP on all targets
-PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Always run in insecure mode, enables root on user build variants
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
